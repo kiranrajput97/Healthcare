@@ -2,10 +2,10 @@ package com.cg.healthcaresystem.dto;
 
 public class Appointment {
 	int User;
-	long appointmentId;
-	String Test;
-	 String datetime;
-	 boolean approved;
+		private	long appointmentId;
+		private String Test;
+		private String datetime;
+		private boolean approved;
 	public int getUser() {
 		return User;
 	}
