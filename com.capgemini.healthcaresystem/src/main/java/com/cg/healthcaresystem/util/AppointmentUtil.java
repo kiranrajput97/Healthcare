@@ -11,6 +11,8 @@ public class AppointmentUtil {
 	
 	 public static List<AppointmentDto>  appointmentcollectionObject= new ArrayList<AppointmentDto>();
 	      public AppointmentUtil() { 
+	    	  new TestUtil();
+	    	  new UserUtil();
 	 
 	    	  DateTimeFormatter myFormat= DateTimeFormatter.ofPattern("dd MM yyyy"); // defination for local date 
 	    
