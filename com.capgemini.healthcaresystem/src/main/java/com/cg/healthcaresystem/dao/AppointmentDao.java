@@ -2,28 +2,28 @@ package com.cg.healthcaresystem.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cg.healthcaresystem.dto.Appointment;
+import com.cg.healthcaresystem.dto.AppointmentDto;
 
 public class AppointmentDao {
 
-   List<Appointment>  appointmentList=new  ArrayList<Appointment>();
+   List<AppointmentDto>  appointmentList=new  ArrayList<AppointmentDto>();
    
-   public List<Appointment> getAppointmentList() {
+   public List<AppointmentDto> getAppointmentList() {
 		return appointmentList;
 	}
 
-	public void setAppointmentList(List<Appointment> appointmentList) {
+	public void setAppointmentList(List<AppointmentDto> appointmentList) {
 		this.appointmentList = appointmentList;
 	}
 	   
  
-public boolean approveAppointmentDao(Appointment appointment)
+public boolean approveAppointmentDao(AppointmentDto appointment)
    {
 	appointmentList.add(appointment);
         return true;
    }
    
-   public boolean makeAppointmentDao(Appointment appointment)
+   public boolean makeAppointmentDao(AppointmentDto appointment)
    
    {
 	   appointmentList.remove(appointment);

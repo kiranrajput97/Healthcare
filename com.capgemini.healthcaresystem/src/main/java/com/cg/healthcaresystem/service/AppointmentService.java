@@ -1,6 +1,6 @@
 package com.cg.healthcaresystem.service;
 import com.cg.healthcaresystem.dao.AppointmentDao;
-import com.cg.healthcaresystem.dto.Appointment;
+import com.cg.healthcaresystem.dto.AppointmentDto;
 import java.util.List;
 
 public class AppointmentService
@@ -17,18 +17,18 @@ public class AppointmentService
 		this.appointmentdao = appointmentdao;
 	}
 
-		public boolean approveAppointmentService(Appointment appointment)
+		public boolean approveAppointmentService(AppointmentDto appointment)
         
     {
             return (appointmentdao.approveAppointmentDao(appointment));
     }
         
-        public boolean makeAppointmentService(Appointment appointment)
+        public boolean makeAppointmentService(AppointmentDto appointment)
     {
             return (appointmentdao.makeAppointmentDao(appointment));
     }
     
-    public List<Appointment>  getAppointmentService()
+    public List<AppointmentDto>  getAppointmentService()
     {
             return (appointmentdao.getAppointmentList());
     }

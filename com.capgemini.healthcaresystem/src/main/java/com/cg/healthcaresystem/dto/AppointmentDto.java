@@ -1,16 +1,18 @@
 package com.cg.healthcaresystem.dto;
 
-public class Appointment {
-	int User;
+import java.time.LocalDate;
+
+public class AppointmentDto {
+		private UserDto user;
 		private	long appointmentId;
-		private String Test;
-		private String datetime;
+		private TestDto test;
+		private LocalDate datetime;
 		private boolean approved;
-	public int getUser() {
-		return User;
+	public UserDto getUser() {
+		return user;
 	}
-	public void setUser(int user) {
-		User = user;
+	public void setUser(UserDto user) {
+		this.user = user;
 	}
 	public long getAppointmentId() {
 		return appointmentId;
@@ -18,16 +20,16 @@ public class Appointment {
 	public void setAppointmentId(long appointmentId) {
 		this.appointmentId = appointmentId;
 	}
-	public String getTest() {
-		return Test;
+	public TestDto getTest() {
+		return test;
 	}
-	public void setTest(String test) {
-		Test = test;
+	public void setTest(TestDto test) {
+		this.test = test;
 	}
-	public String getDatetime() {
+	public LocalDate getDatetime() {
 		return datetime;
 	}
-	public void setDatetime(String datetime) {
+	public void setDatetime(LocalDate datetime) {
 		this.datetime = datetime;
 	}
 	public boolean isApproved() {
