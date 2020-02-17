@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 import com.cg.healthcaresystem.dto.UserDto;
 
-public class UserUtil {
+public class UserRepository {
 	public static List<UserDto> userCollectionObject= new ArrayList<UserDto>();
 
-	public  UserUtil() { // constructor
+	public  UserRepository() { // constructor
 		UserDto object = new UserDto();
 		object.setUsername("Kiran");
 		object.setContactNo(8855876618l);
@@ -25,8 +25,8 @@ public class UserUtil {
 		
 		UserDto object3 = new UserDto();
 		object3.setUsername("sohaib");
-		object.setContactNo(8889027290l);
-		object.setUsedId("0333");
+		object3.setContactNo(8889027290l);
+		object3.setUsedId("0333");
 		
 		userCollectionObject.add(object3);
 		
