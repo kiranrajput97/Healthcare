@@ -13,8 +13,8 @@ public class AppointmentRepository {
 	      public AppointmentRepository() { 
 	    	  new TestRepository();
 	    	  new UserRepository();
-	 
-	    	  DateTimeFormatter myFormat= DateTimeFormatter.ofPattern("dd MM yyyy"); // defination for local date 
+
+	    	  DateTimeFormatter myFormat= DateTimeFormatter.ofPattern("dd MM yyyy"); // Definition for local date 
 	    
 	    	  AppointmentDto object =new AppointmentDto(); 
 				 TestRepository testObject = new TestRepository();
@@ -30,11 +30,11 @@ public class AppointmentRepository {
 				 AppointmentDto object2 =new AppointmentDto(); 
 				 TestRepository testObject2 = new TestRepository();
 				 UserRepository userObject2 = new UserRepository();
-				 object.setUser(userObject2.userCollectionObject.get(1));
-				 object.setTest(testObject2.testCollectionObject.get(1));
-				 object.setAppointmentId(2222222222l);
-				 object.setDatetime(LocalDate.parse("04 01 2000", myFormat)); // taking local date
-				 object.setApproved(true);
+				 object2.setUser(userObject2.userCollectionObject.get(1));
+				 object2.setTest(testObject2.testCollectionObject.get(1));
+				 object2.setAppointmentId(2222222222l);
+				 object2.setDatetime(LocalDate.parse("04 01 2000", myFormat)); // taking local date
+				 object2.setApproved(true);
 				 
 				 appointmentcollectionObject.add(object2);
 				 

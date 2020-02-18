@@ -33,6 +33,9 @@ public class AppointmentService
             return (appointmentdao.getAppointmentList());
     }
     
+    AppointmentDao appointmentdaoob =new AppointmentDao();
+
+  
     
 }
 
