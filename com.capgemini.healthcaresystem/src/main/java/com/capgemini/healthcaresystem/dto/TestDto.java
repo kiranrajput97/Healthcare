@@ -1,4 +1,4 @@
-package com.cg.healthcaresystem.dto;
+package com.capgemini.healthcaresystem.dto;
 
 public class TestDto {
 	private String testId;

@@ -1,9 +1,10 @@
-package com.cg.healthcaresystem.util;
+package com.capgemini.healthcaresystem.util;
 
 import java.util.List;
-import java.util.ArrayList;
 
-import com.cg.healthcaresystem.dto.UserDto;
+import com.capgemini.healthcaresystem.dto.UserDto;
+
+import java.util.ArrayList;
 
 public class UserRepository {
 	public static List<UserDto> userCollectionObject= new ArrayList<UserDto>();

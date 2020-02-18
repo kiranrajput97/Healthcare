@@ -1,11 +1,11 @@
-package com.cg.healthcaresystem.dao;
+package com.capgemini.healthcaresystem.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cg.healthcaresystem.dto.AppointmentDto;
-import com.cg.healthcaresystem.util.AppointmentRepository;
-import com.cg.healthcaresystem.util.TestRepository;
-import com.cg.healthcaresystem.util.UserRepository;
+import com.capgemini.healthcaresystem.dto.AppointmentDto;
+import com.capgemini.healthcaresystem.util.AppointmentRepository;
+import com.capgemini.healthcaresystem.util.TestRepository;
+import com.capgemini.healthcaresystem.util.UserRepository;
 
 public class AppointmentDao {
 

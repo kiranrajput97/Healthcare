@@ -1,4 +1,4 @@
-package com.cg.healthcaresystem.dto;
+package com.capgemini.healthcaresystem.dto;
 
 import java.awt.List;
 import java.math.BigInteger;

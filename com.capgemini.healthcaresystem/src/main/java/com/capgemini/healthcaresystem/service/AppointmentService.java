@@ -1,6 +1,7 @@
-package com.cg.healthcaresystem.service;
-import com.cg.healthcaresystem.dao.AppointmentDao;
-import com.cg.healthcaresystem.dto.AppointmentDto;
+package com.capgemini.healthcaresystem.service;
+import com.capgemini.healthcaresystem.dao.AppointmentDao;
+import com.capgemini.healthcaresystem.dto.AppointmentDto;
+
 import java.util.List;
 
 public class AppointmentService

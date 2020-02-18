@@ -1,9 +1,9 @@
-package com.cg.healthcaresystem.util;
+package com.capgemini.healthcaresystem.util;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cg.healthcaresystem.dto.TestDto;
+import com.capgemini.healthcaresystem.dto.TestDto;
 
 public class TestRepository {
 	public static List<TestDto> testCollectionObject= new ArrayList<TestDto>();
