@@ -1,10 +1,8 @@
 package com.capgemini.healthcaresystem.ui;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Scanner;
 
 import com.capgemini.healthcaresystem.dto.AppointmentDto;
@@ -13,17 +11,17 @@ import com.capgemini.healthcaresystem.dto.UserDto;
 import com.capgemini.healthcaresystem.util.AppointmentRepository;
 import com.capgemini.healthcaresystem.util.TestRepository;
 import com.capgemini.healthcaresystem.util.UserRepository;
-import com.capgemini.healthcaresystem.util.*;
 
 public class MainClass {
 
 	public static void main(String[] args) {
 
-//		
+		
 //		TestRepository TestobjectRepo= new TestRepository();
 //		UserRepository UserobjectRepo= new UserRepository();
 //		AppointmentRepository objectUtil = new AppointmentRepository();
 
+		@SuppressWarnings("resource")
 		Scanner scanObject = new Scanner(System.in);
 		int userInputChoice = 1;
 		String deleteInputId;
@@ -69,26 +67,20 @@ public class MainClass {
 					appointmentDto.setTest(testDto);
 
 					System.out.println("enter the date patient want to go undergo test : ");
+					@SuppressWarnings("resource")
 					Scanner scanner = new Scanner(System.in);
 					date = scanner.next();
 
 					SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 					LocalDate date2 = null;
-					try {
-						// Parsing the String
-//						date2 = dateFormat.parse(date);
-						date2 = null;
-					} catch (Exception e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-//					System.out.println(date2);
-//					System.out.println("Patient name is : " + username + "  "
-//							+ "\n Diagnostic center seleced by patient is : " + diagnosticCentre + "  "
-//							+ "\n Test user want to undergo : " + testName + "\n ate selected by user is :" + date);
-//
-//					System.out.println(
-//							"Appointment made successfully...\n please wait to see the status of your appointment as conformed or not...");
+
+					System.out.println("\n Patient name is                          : " + username + "  "
+									 + "\n Diagnostic center seleced by patient is : " + diagnosticCentre + "  "
+							   		 + "\n Test user want to undergo               : " + testName + " "
+									 + "\n Date selected by user is                : " + date);
+
+					System.out.println("Appointment made successfully..."
+									+ "	\n please wait to see the status of your appointment as conformed or not...");
 					appointmentDto.setDatetime(date2);
 					
 					AppointmentRepository.addAppointment(appointmentDto);
@@ -119,4 +111,11 @@ public class MainClass {
 	
 		}
 	}
+//		String testFun(String uname, String diagCentre, String tname, String sDate) {
+//      // TODO Auto-generated method stub
+//      
+//      String userName=uname,  dCentre=diagCentre , testname=tname,  tDate=sDate;
+//      AppointmentService appointmentservice=new AppointmentService();
+//      return (appointmentservice.getUserName()+testFun.getdCentre()+testFun.gettestname()+testFun.getttDate()); 
+//}
 }

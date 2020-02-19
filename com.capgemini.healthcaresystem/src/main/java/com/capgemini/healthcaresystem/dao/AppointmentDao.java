@@ -1,5 +1,6 @@
 package com.capgemini.healthcaresystem.dao;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import com.capgemini.healthcaresystem.dto.AppointmentDto;
@@ -41,7 +42,7 @@ public boolean approveAppointmentDao(AppointmentDto appointment)
 	   appointmentList.remove(appointment);
                 return true;
    }
-
+  
 
    
 }
