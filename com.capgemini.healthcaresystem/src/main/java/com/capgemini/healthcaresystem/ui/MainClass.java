@@ -8,23 +8,24 @@ import java.util.Scanner;
 import com.capgemini.healthcaresystem.dto.AppointmentDto;
 import com.capgemini.healthcaresystem.dto.TestDto;
 import com.capgemini.healthcaresystem.dto.UserDto;
+import com.capgemini.healthcaresystem.service.AppointmentService;
 import com.capgemini.healthcaresystem.util.AppointmentRepository;
 import com.capgemini.healthcaresystem.util.TestRepository;
 import com.capgemini.healthcaresystem.util.UserRepository;
 
 public class MainClass {
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) throws Exception{
 		
 //		TestRepository TestobjectRepo= new TestRepository();
 //		UserRepository UserobjectRepo= new UserRepository();
 //		AppointmentRepository objectUtil = new AppointmentRepository();
 
+		
 		@SuppressWarnings("resource")
 		Scanner scanObject = new Scanner(System.in);
 		int userInputChoice = 1;
-		String deleteInputId;
+		//String deleteInputId;
 		int userChoice;
 		int inputShow;
 		String username;
@@ -111,11 +112,5 @@ public class MainClass {
 	
 		}
 	}
-//		String testFun(String uname, String diagCentre, String tname, String sDate) {
-//      // TODO Auto-generated method stub
-//      
-//      String userName=uname,  dCentre=diagCentre , testname=tname,  tDate=sDate;
-//      AppointmentService appointmentservice=new AppointmentService();
-//      return (appointmentservice.getUserName()+testFun.getdCentre()+testFun.gettestname()+testFun.getttDate()); 
-//}
+
 }

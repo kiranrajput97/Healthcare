@@ -8,7 +8,7 @@ import java.util.List;
 import com.capgemini.healthcaresystem.dto.AppointmentDto;
 
 public class AppointmentRepository {
-
+	
 	public static List<AppointmentDto> appointmentCollectionObject = new ArrayList<AppointmentDto>();
 
 	public AppointmentRepository() {

@@ -44,7 +44,7 @@ public class UserRepository {
 			System.out.println("the contact number is: "+ i.getContactNo());
 			System.out.println("the userId is: "+ i.getUsedId());
 			System.out.println("\n");
-
+			
 		}
 	}
 }

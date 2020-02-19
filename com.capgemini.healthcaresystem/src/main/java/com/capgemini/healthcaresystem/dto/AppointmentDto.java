@@ -6,11 +6,29 @@ public class AppointmentDto {
 	private UserDto user;
 	private long appointmentId;
 
-
 	private String diagnosticCentre;
 	private TestDto test;
 	private LocalDate datetime;
 	private boolean approved;
+	private String username;
+	private String testName;
+	
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getTestName() {
+		return testName;
+	}
+
+	public void setTestName(String testName) {
+		this.testName = testName;
+	}
 
 	public UserDto getUser() {
 		return user;

@@ -15,12 +15,11 @@ public class AppointmentDao {
 //   public AppointmentDao(){
 //		
 //		System.out.println("Data Stored in the repository is as follows : ");
+//		AppointmentRepository objectUtil = new AppointmentRepository();
 //		TestRepository TestobjectRepo= new TestRepository();
 //		UserRepository UserobjectRepo= new UserRepository();
-//		AppointmentRepository objectUtil = new AppointmentRepository();
-//	   
-//   }
-   
+//	   }
+  
    public List<AppointmentDto> getAppointmentList() {
 		return appointmentList;
 	}
