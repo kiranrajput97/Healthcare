@@ -35,6 +35,7 @@ public class AppointmentRepository {
 			System.out.println("the approved status is : " + i.isApproved());
 
 		}
+		
 	} 
 
 	public static void addAppointment(AppointmentDto custom)
