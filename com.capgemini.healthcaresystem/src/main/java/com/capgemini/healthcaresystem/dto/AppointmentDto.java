@@ -2,78 +2,94 @@ package com.capgemini.healthcaresystem.dto;
 
 import java.time.LocalDate;
 
-public class AppointmentDto {
+public class AppointmentDto 
+{ 
 	private UserDto user;
 	private long appointmentId;
-
-	private String diagnosticCentre;
+	private String diagnosticCentre; 
 	private TestDto test;
 	private LocalDate datetime;
 	private boolean approved;
 	private String username;
 	private String testName;
 	
-
-	public String getUsername() {
+ 
+	public String getUsername() 
+	{
 		return username;
 	}
 
-	public void setUsername(String username) {
+	public void setUsername(String username) 
+	{
 		this.username = username;
 	}
 
-	public String getTestName() {
+	public String getTestName() 
+	{
 		return testName;
 	}
 
-	public void setTestName(String testName) {
+	public void setTestName(String testName) 
+	{
 		this.testName = testName;
 	}
 
-	public UserDto getUser() {
+	public UserDto getUser() 
+	{
 		return user;
 	}
 
-	public void setUser(UserDto user) {
+	public void setUser(UserDto user)
+	{
 		this.user = user;
 	}
 
-	public long getAppointmentId() {
+	public long getAppointmentId() 
+	{
 		return appointmentId;
 	}
 
-	public void setAppointmentId(long appointmentId) {
+	public void setAppointmentId(long appointmentId) 
+	{
 		this.appointmentId = appointmentId;
 	}
 
-	public TestDto getTest() {
+	public TestDto getTest() 
+	{
 		return test;
 	}
 
-	public void setTest(TestDto test) {
+	public void setTest(TestDto test) 
+	{
 		this.test = test;
 	}
 
-	public LocalDate getDatetime() {
+	public LocalDate getDatetime() 
+	{
 		return datetime;
 	}
 
-	public void setDatetime(LocalDate datetime) {
+	public void setDatetime(LocalDate datetime) 
+	{
 		this.datetime = datetime;
 	}
 
-	public boolean isApproved() {
+	public boolean isApproved() 
+	{
 		return approved;
 	}
 
-	public void setApproved(boolean approved) {
+	public void setApproved(boolean approved) 
+	{
 		this.approved = approved;
 	}
-	public String getDiagnosticCentre() {
+	public String getDiagnosticCentre() 
+	{
 		return diagnosticCentre;
 	}
 
-	public void setDiagnosticCentre(String diagnosticCentre) {
+	public void setDiagnosticCentre(String diagnosticCentre) 
+	{
 		this.diagnosticCentre = diagnosticCentre;
 	}
 

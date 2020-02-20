@@ -8,23 +8,6 @@ import com.capgemini.healthcaresystem.dto.TestDto;
 public class TestRepository {
 	public static List<TestDto> testCollectionObject= new ArrayList<TestDto>();
 
-
-	
-/*
- 		private static List<TestDto> testCollectionObject= new ArrayList<TestDto>();
-
-	public static List<TestDto> getTestCollectionObject() {
-		return testCollectionObject;
-	}
-
-
-
-	public static void setTestCollectionObject(List<TestDto> testCollectionObject) {
-		TestUtil.testCollectionObject = testCollectionObject;
-	}
-
-*/
-
 	public  TestRepository() {        // constructor 
 		TestDto object = new TestDto();
 		object.setTestId("test101");
@@ -37,7 +20,7 @@ public class TestRepository {
 		object2.setTestId("test102");
 		object2.setTestName("testname2");
 	
-	
+	 
 		testCollectionObject.add(object2);
 		
 		TestDto object3 = new TestDto();
@@ -47,7 +30,7 @@ public class TestRepository {
 		testCollectionObject.add(object3);
 		
 		TestDto object4 = new TestDto();
-		object4.setTestId("test104");
+		object4.setTestId("test104"); 
 		object4.setTestName("testname4");
 	
 	

@@ -1,35 +1,39 @@
 package com.capgemini.healthcaresystem.dao;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import com.capgemini.healthcaresystem.dto.AppointmentDto;
-import com.capgemini.healthcaresystem.util.AppointmentRepository;
 import com.capgemini.healthcaresystem.util.TestRepository;
-import com.capgemini.healthcaresystem.util.UserRepository;
 
-public class AppointmentDao {
+public class AppointmentDao 
+   {  
 
    List<AppointmentDto>  appointmentList=new  ArrayList<AppointmentDto>();
-    
-//   public AppointmentDao(){
-//		
-//		System.out.println("Data Stored in the repository is as follows : ");
-//		AppointmentRepository objectUtil = new AppointmentRepository();
-//		TestRepository TestobjectRepo= new TestRepository();
-//		UserRepository UserobjectRepo= new UserRepository();
-//	   }
-  
-   public List<AppointmentDto> getAppointmentList() {
-		return appointmentList;
-	}
+     
+   public class TestDto
+   {
+				 List<TestDto> testCollectionObject= new ArrayList<TestDto>();
+					TestRepository TestobjectRepo= new TestRepository();
 
-	public void setAppointmentList(List<AppointmentDto> appointmentList) {
+   }
+   public class UserDto
+   {
+		 List<UserDto> userCollectionObject= new ArrayList<UserDto>();
+
+   } 
+  
+   public List<AppointmentDto> getAppointmentList() 
+   {
+		return appointmentList;
+   }
+
+	public void setAppointmentList(List<AppointmentDto> appointmentList)
+	{
 		this.appointmentList = appointmentList;
 	}
 	   
  
-public boolean approveAppointmentDao(AppointmentDto appointment)
+	public boolean approveAppointmentDao(AppointmentDto appointment)
    {
 	appointmentList.add(appointment);
         return true;

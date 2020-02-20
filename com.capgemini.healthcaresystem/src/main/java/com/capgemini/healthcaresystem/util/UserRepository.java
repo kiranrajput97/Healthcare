@@ -14,7 +14,7 @@ public class UserRepository {
 		object.setUsername("Kiran");
 		object.setContactNo(8855876618l);
 		object.setUsedId("0111");
-		
+		 
 		userCollectionObject.add(object);
 		
 		UserDto object2 = new UserDto();
@@ -24,7 +24,7 @@ public class UserRepository {
 		
 		userCollectionObject.add(object2);
 		
-		UserDto object3 = new UserDto();
+		UserDto object3 = new UserDto(); 
 		object3.setUsername("sohaib");
 		object3.setContactNo(8889027290l);
 		object3.setUsedId("0333");

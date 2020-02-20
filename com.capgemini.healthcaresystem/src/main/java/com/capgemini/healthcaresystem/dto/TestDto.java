@@ -1,20 +1,26 @@
 package com.capgemini.healthcaresystem.dto;
 
-public class TestDto {
+public class TestDto
+{
 	private String testId;
 	 private String testName;
 	 
-	public String getTestId() {
+	public String getTestId() 
+	{
 		return testId;
 	}
-	public void setTestId(String testId) {
+	public void setTestId(String testId) 
+	{
 		this.testId = testId;
 	}
-	public String getTestName() {
+	public String getTestName()  
+	{
 		return testName;
 	}
-	public void setTestName(String testName) {
+	public void setTestName(String testName) 
+	{
 		this.testName = testName;
 	}
 
 }
+ 

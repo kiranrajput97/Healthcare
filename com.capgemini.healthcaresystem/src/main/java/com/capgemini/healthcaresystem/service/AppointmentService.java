@@ -7,16 +7,18 @@ import java.util.List;
 public class AppointmentService 
 {
 	AppointmentDao appointmentdao=new AppointmentDao();
-        
     
-       
-        public AppointmentDao getAppointmentdao() {
-		return appointmentdao;
+        public AppointmentDao getAppointmentdao() 
+    {
+		 return appointmentdao;
 	}
 
-	public void setAppointmentdao(AppointmentDao appointmentdao) {
+	public void setAppointmentdao(AppointmentDao appointmentdao)
+	{
 		this.appointmentdao = appointmentdao;
-	}
+	} 
+	
+	
 
 		public boolean approveAppointmentService(AppointmentDto appointment)
         
@@ -35,14 +37,6 @@ public class AppointmentService
     }
     
     AppointmentDao appointmentdaoob =new AppointmentDao();
-
-
-
-	
-
-
-
-  
     
 }
 
