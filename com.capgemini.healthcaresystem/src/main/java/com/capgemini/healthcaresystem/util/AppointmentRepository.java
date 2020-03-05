@@ -24,11 +24,48 @@ public class AppointmentRepository {
 
 		AppointmentDto object2 = new AppointmentDto();
 		object2.setAppointmentId(2222222222l);
-		object2.setDatetime(LocalDate.parse("04 02 2000", myFormat)); // taking local date
+		object2.setDatetime(LocalDate.parse("04 02 2020", myFormat)); // taking local date
 		object2.setApproved(true);
 
 		appointmentCollectionObject.add(object2);
 
+		AppointmentDto object3 = new AppointmentDto();
+		object3.setAppointmentId(3333333333l);
+		object3.setDatetime(LocalDate.parse("10 02 2020", myFormat)); // taking local date
+		object3.setApproved(true);
+
+		appointmentCollectionObject.add(object3);
+
+		AppointmentDto object4 = new AppointmentDto();
+		object4.setAppointmentId(3333333333l);
+		object4.setDatetime(LocalDate.parse("12 02 2020", myFormat)); // taking local date
+		object4.setApproved(true);
+
+		appointmentCollectionObject.add(object4);
+
+		AppointmentDto object5 = new AppointmentDto();
+		object5.setAppointmentId(55555555555l);
+		object5.setDatetime(LocalDate.parse("16 02 2020", myFormat)); // taking local date
+		object5.setApproved(true);
+
+		appointmentCollectionObject.add(object5);
+
+		AppointmentDto object6 = new AppointmentDto();
+		object6.setAppointmentId(6666666666l);
+		object6.setDatetime(LocalDate.parse("18 02 2020", myFormat)); // taking local date
+		object6.setApproved(true);
+
+		appointmentCollectionObject.add(object6);
+
+		AppointmentDto object7 = new AppointmentDto();
+		object7.setAppointmentId(7777777777l);
+		object7.setDatetime(LocalDate.parse("19 02 2020", myFormat)); // taking local date
+		object7.setApproved(true);
+
+		appointmentCollectionObject.add(object7);
+
+		
+		
 		for (AppointmentDto i : appointmentCollectionObject) {
 			System.out.println("the appointment id is : " + i.getAppointmentId());
 			System.out.println("Date of the test is : " + i.getDatetime());
@@ -50,4 +87,5 @@ public class AppointmentRepository {
 		
 		}
 	}
+	
 }

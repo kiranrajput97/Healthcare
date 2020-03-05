@@ -74,7 +74,7 @@ public class AppointmentDaoTest {
 					object10.setTestName("blood");
 					boolean flag =obj10.makeAppointmentDao(object10);
 					assertEquals(flag, true);	
-				}
+				} 
 				@Test
 				public void appointmentDaoTest11() {	
 					AppointmentDao obj11=new AppointmentDao();

@@ -16,7 +16,8 @@ import com.capgemini.healthcaresystem.util.UserRepository;
 public class Client {
 
 	@SuppressWarnings({ "unused", "resource" })
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception { 
+		
 
 
 		@SuppressWarnings("resource")
@@ -27,7 +28,7 @@ public class Client {
 		String date;
 		DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("dd MM yyyy"); // Definition for local date
 
-		while (userInputChoice != 0) {
+		while (userInputChoice != 0) { 
 			System.out.println("Press\n1.Make Appointment \n2.Approve Appointment\n3. View Appointments\n0. Exit");
 			userInputChoice = scanObject.nextInt();
 
@@ -35,7 +36,7 @@ public class Client {
 
 			case 0:
 				System.out.println("Thank you ..! visit again");
-				break;
+				break; 
 			case 1:
 				try {
 					AppointmentDto appointmentDto = new AppointmentDto();
@@ -56,7 +57,7 @@ public class Client {
 
 						System.out.println("Name should contain only aplhabets");
 					}
-					// username validation ends
+					// user name validation ends
 
 					UserDto user = new UserDto();
 					user.setUsername(username);
@@ -154,6 +155,17 @@ public class Client {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,7 +16,7 @@ public class ValidationService
 	} 
 
 	public static boolean validatetest(String test)
-	
+	 
 	{
 		return test.matches("[a-zA-Z]+");
 	}

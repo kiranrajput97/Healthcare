@@ -11,7 +11,7 @@ public class AppoinmentServiceTest {
 		public void appointmentServiceTest1() {	
 			AppointmentService obj1=new AppointmentService();
 			AppointmentDto object1=new AppointmentDto();
-			object1.setApproved(true);
+			object1.setApproved(true); 
 			obj1.approveAppointmentService(object1);
 			assertEquals(object1.isApproved(), true);	
 		} 

@@ -4,7 +4,7 @@ import com.capgemini.healthcaresystem.dto.AppointmentDto;
 
 import java.util.List;
 
-public class AppointmentService 
+public class AppointmentService  
 {
 	AppointmentDao appointmentdao=new AppointmentDao();
     
@@ -16,7 +16,7 @@ public class AppointmentService
 	public void setAppointmentdao(AppointmentDao appointmentdao)
 	{
 		this.appointmentdao = appointmentdao;
-	} 
+	}  
 	 
 	
 
